@@ -1,0 +1,94 @@
+html, body {
+    height: 100%;
+    font-family: cursive;
+    align-content: center;
+}
+.alert{
+    font-size: xx-large;
+    text-align: center;
+    font-weight: 900;
+}
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+div {
+    font-size: large;
+}
+.container {
+    background-color: white;
+    margin-top: 50px;
+    height: 70%;
+    width: 80%;
+    border: solid goldenrod;
+}
+
+.toggle {
+    display: block;
+    margin-top: 10px;
+}
+
+.button {
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+}
+
+.button-active {
+    position: relative;
+    top: 1px;
+}
+
+.notDone {
+    background-color: grey;
+    border: 1px solid #5c4e4a;
+    box-shadow: inset 0px 1px 0px 0px #524b49;
+    background:linear-gradient(to bottom, grey 5%, #2b2a2a 100%);
+    text-shadow:0px 1px 0px #f7f6f2;
+}
+.notDone:hover {
+    background:linear-gradient(to bottom, 2b2a2a 5%, grey 100%);
+    color: #2b2a2a;
+}
+.done {
+    background-color: greenyellow;
+    border: 1px solid #0c8082;
+    text-shadow:0px 1px 0px #f7f6f2;
+    box-shadow: inset 0px 1px 0px 0px #215b5c;
+    background:linear-gradient(to bottom, #0aeef2 5%, #023738 100%);
+}
+
+.done:hover {
+    background:linear-gradient(to bottom, rgb(148, 216, 22) 5%, green 100%);
+    color: black;
+}
+
+
+.todo {
+    background-color: #eb75a6;
+    border: 1px solid #d11764;
+    text-shadow:0px 1px 0px #f7f6f2;
+    box-shadow: inset 0px 1px 0px 0px #7a3150;
+    background:linear-gradient(to bottom, #eb75a6 5%,#5e1333 100%);
+}
+
+.todo:hover {
+    background:linear-gradient(to bottom, #5e1333 5%,#eb75a6 100%);
+    color: #5e1333;
+}
+
+.restore {
+    background-color: #e8e180;
+    border: 1px solid #e0d20b;
+    text-shadow:0px 1px 0px #f7f6f2;
+    box-shadow: inset 0px 1px 0px 0px #7a763a;
+    background:linear-gradient(to bottom, #e8e180 5%, #c48b10 100%);
+}
+
+.restore:hover {
+    background:linear-gradient(to bottom, #c48b10 5%, #e8e180 100%);
+    color: #c48b10;
+}
+

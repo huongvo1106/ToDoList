@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- basically specific which character set website -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To Do List</title>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="css/main.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <script
+            src="https://kit.fontawesome.com/eacaad73d5.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+<body>
+    <div class = "container">
+        <!-- <h1>TO DO LIST</h1> -->
+        <div class="alert alert-danger">To Do list </div>
+        <p>Beat the hell out of missing deadline!!!</p>
+        <h4>
+        <!-- why -->
+            <label for="todo" style="display: block;">Things To Do</label>
+        </h4>
+        <input type="text" id="todo">
+        <select id="priority">
+            <option value = "1">NOW</option>
+            <option value = "2">NO CRUSH</option>
+            <option value = "3">SOON</option>
+        </select>
+        <button class = "button todo" type="button" onclick= "addToDo()">Add</button>
+        <div class="toggle">
+            <button class="button todo" type="button" onclick= "showAll()">Show All</button>
+            <button class="button done" type="button" onclick= "showDone()">Done</button>
+            <button class="button notDone" type="button" onclick= "showNotDone()">Not Done Yet</button>
+            <button class="button restore" type="button" onclick= "addToDo()">Restore</button>
+        </div>
+        <ol id="todo-list" style="margin : 10px;"></ol>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</body>
+</html>
